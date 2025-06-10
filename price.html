@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Solicitar Orçamento</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="logo-box">
+        <h1 class="logo-box_logo">
+          <a href="index.html" class="logo-box_logo-link black">Lya Photos</a>
+        </h1>
+      </div>
+      <div class="navigation-bar">
+        <a href="./about.html" class="navigation-bar_item black">Sobre mim</a>
+        <a href="./work.html" class="navigation-bar_item black">Meus trabalhos</a>
+        <a href="./contactme.html" class="navigation-bar_item black">Contatos</a>
+        <a href="./price.html" class="navigation-bar_item black">Orçamento</a>
+      </div>
+    </nav>
+
+    <div class="price-section_inquiry-form">
+  <div class="inquiry-form-wrapper">
+    <h2 class="price-section_heading">Solicite um Orçamento</h2>
+    <form 
+      action="https://docs.google.com/forms/d/e/1FAIpQLSdRRdtcmjfSOLOGIMBuqd4qSBXT99PNlknZQxkQvZlYfQLL4w/formResponse" 
+      method="POST" 
+      target="_blank"
+    >
+      <input type="text" name="entry.1539608754" placeholder="Nome completo" required />
+
+      <select id="tipoEnsaio" name="entry.264620914" required>
+        <option value="" disabled selected>Tipo de ensaio fotográfico</option>
+        <option value="casal">Casal</option>
+        <option value="gestante">Gestante</option>
+        <option value="individual">Individual</option>
+        <option value="família">Família</option>
+        <option value="família">Produtos</option>
+        <option value="evento">Evento</option>
+      </select>
+
+      <input
+        type="text"
+        id="descricaoEvento"
+        name="entry.2004446804"
+        placeholder="Descreva o evento"
+        style="display:none; margin-top: 10px;"
+      />
+
+      <input type="datetime-local" name="entry.375147038" required />
+
+      <input type="text" name="entry.820789193" placeholder="Duração estimada do ensaio" required />
+
+      <input type="tel" name="entry.94878864" placeholder="Telefone para contato (Entraremos em contato com o orçamento personalizado)" required />
+
+      <input type="submit" value="Solicitar orçamento" />
+    </form>
+  </div>
+</div>
+
+<script>
+  const selectTipo = document.getElementById('tipoEnsaio');
+  const inputEvento = document.getElementById('descricaoEvento');
+
+  selectTipo.addEventListener('change', function () {
+    if (this.value === 'evento') {
+      inputEvento.style.display = 'block';
+      inputEvento.required = true;
+    } else {
+      inputEvento.style.display = 'none';
+      inputEvento.required = false;
+      inputEvento.value = '';
+    }
+  });
+</script>
+
+    <div class="work-section_image-grid margin-auto">
+      <img src="./images/img15.jpg" alt="Image 1" class="gallery-image" />
+      <img src="./images/img16.jpg" alt="Image 2" class="gallery-image" />
+      <img src="./images/img17.jpg" alt="Image 3" class="gallery-image" />
+    </div>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="./about.html" class="footer-links_item">Sobre mim</a>
+        <a href="./work.html" class="footer-links_item">Meus trabalhos</a>
+        <a href="./contactme.html" class="footer-links_item">Contatos</a>
+        <a href="./price.html" class="footer-links_item">Valores</a>
+      </div>
+      <div class="footer-text">
+        <p class="footer-text-paragraph">
+          Contatos:
+          <br />
+          <a
+            href="https://www.instagram.com/lyaphotos_/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Instagram</a
+          >
+          <br />
+          Email: lyafotografa@gmail.com
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Me contacte</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
+  </head>
+  <body>
+    <nav class="navigation">
+      <div class="logo-box">
+        <h1 class="logo-box_logo">
+          <a href="index.html" class="logo-box_logo-link black">Lya Photos</a>
+        </h1>
+      </div>
+      <div class="navigation-bar">
+        <a href="./about.html" class="navigation-bar_item black">Sobre mim</a>
+        <a href="./work.html" class="navigation-bar_item black">Meus trabalhos</a>
+        <a href="./contactme.html" class="navigation-bar_item black"
+          >Contatos</a
+        >
+        <a href="./price.html" class="navigation-bar_item black">Orçamento</a>
+      </div>
+    </nav>
+    <section class="form-section">
+      <div class="contact-form_text-content">
+        <h4 class="contact-form_text-content_heading">
+          Fale comigo!
+        </h4>
+        <p class="contact-form_text-content_paragraph">
+          Ficarei muito feliz em ouvir você!
+          Entre em contato para agendar um ensaio, tirar dúvidas ou solicitar um 
+          orçamento personalizado, entre em contato.
+          Responderei o mais rápido possível para que possamos transformar
+          suas ideias em fotos incríveis!
+        </p>
+        <p class="contact-form_text-content_paragraph">
+          Utilize uma das redes sociais abaixo ou mande diretamente um email.
+        </p>
+
+        <div class="social-buttons">
+          <a href="https://wa.me/5588981503880" target="_blank">
+            <img src="./images/logowpp.png" alt="WhatsApp" class="social-icon" />
+          </a>
+          <a href="https://www.instagram.com/lyaphotos_/" target="_blank">
+            <img src="./images/logoinst.png" alt="Instagram" class="social-icon" />
+          </a>
+        </div>
+      </div>
+      <form 
+        action="https://docs.google.com/forms/d/e/1FAIpQLScumpePExPqjEUqhqXAaIsubrrM-lLb2eX6bOEFH4sjMLebjA/formResponse" 
+        method="POST" 
+        target="_blank" 
+        onsubmit="alert('Formulário enviado!');"
+        class="contact-me"
+      >
+        <label for="fname">Nome</label>
+        <input
+          type="text"
+          id="fname"
+          name="entry.720123696"
+          placeholder="Seu nome.."
+          required
+        />
+
+        <label for="lname">Sobrenome</label>
+        <input
+          type="text"
+          id="lname"
+          name="entry.1886230627"
+          placeholder="Seu sobrenome.."
+          required
+        />
+
+        <label for="fone">Telefone para contato</label>
+        <input
+          type="text"
+          id="fone"
+          name="entry.703956259"
+          placeholder="Seu telefone (De preferência, com whatsapp).."
+        />
+
+        <label for="subject">Mensagem</label>
+        <textarea
+          id="subject"
+          name="entry.1192425682"
+          placeholder="Fique a vontade para escrever o que quiser.."
+          style="height:200px"
+        ></textarea>
+
+        <input type="submit" id="submit" value="Enviar" />
+      </form>
+    </section>
+    <div class="work-section_image-grid margin-auto">
+      <img src="./images/img12.jpg" alt="Image 1" class="gallery-image" />
+      <img src="./images/img13.png" alt="Image 2" class="gallery-image" />
+      <img src="./images/img14.jpg" alt="Image 3" class="gallery-image" />
+    </div>
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="./about.html" class="footer-links_item">Sobre mim</a>
+        <a href="./work.html" class="footer-links_item">Meus trabalhos</a>
+        <a href="./contactme.html" class="footer-links_item">Contatos</a>
+        <a href="./price.html" class="footer-links_item">Valores</a>
+      </div>
+      <div class="footer-text">
+        <p class="footer-text-paragraph">
+          Contatos:
+          <br />
+          <a
+            href="https://www.instagram.com/lyaphotos_/"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Instagram</a
+          >
+          <br />
+          Email: lyafotografa@gmail.com
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
